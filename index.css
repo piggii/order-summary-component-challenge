@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    flex: 1;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-pattern {
+    width: 100%;
+    position: absolute;
+    top: -100px;
+}
+
+.bg-img {
+    width: 100%;
+}
+
+.card {
+    width: 450px;
+    height: auto;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-hd {
+    display: flex;
+}
+
+.card-hd-img {
+    width: 100%;
+}
+
+.card-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px 20px 40px;
+}
+
+.font-weight-900 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.font-weight-700 {
+    font-weight: 700;
+}
+
+.paragraph-weight-500 {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 10px;
+}
+
+.font-weight-500 {
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.price-container {
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.price-container-left {
+    display: flex;
+    column-gap: 20px;
+}
+
+.price-container-right {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-styled {
+    padding: 15px;
+    border: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.payment-btn {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    box-shadow: 0px 10px 50px 5px hsl(228, 33%, 80%);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: none;
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (max-width: 375px) {
+    .card {
+        width: 300px;
+    }
+
+    .font-weight-700 {
+        font-size: 14px;
+    }
+
+    .paragraph-weight-500 {
+        font-size: 14px;
+    }
+
+    .font-weight-500 {
+        font-size: 14px;
+    }
+
+    .card-content {
+        padding: 40px 25px 20px 25px;
+    }
+
+    .price-container {
+        padding: 15px;
+    }
+
+    .price-container-right {
+        font-size: 14px;
+    }
+
+    .price-container-left {
+        column-gap: 10px;
+    }
+}
